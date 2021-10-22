@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+.bg {
+  background: url(./images/bg-pattern.svg) center top no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  margin: -180px auto 0 auto;
+}
+
+header h1 {
+  font-weight: 800;
+}
+
+header p {
+  color: #858fad;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container {
+  width: 600px;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .first p {
+  color: #858fad;
+}
+
+.container .first #value {
+  margin: 50px 0 50px 0;
+  font-size: 20px;
+}
+
+.container .first h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .first h2 p {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.slideContainer {
+  width: 85%;
+  margin: 30px;
+  position: relative;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #d6d6d6), color-stop(60%, #d6d6d6));
+  background: linear-gradient(90deg, #d6d6d6 60%, #d6d6d6 60%);
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: #10d5c2;
+  background-image: url(./images//icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 10px 20px #10d5c2;
+          box-shadow: 4px 10px 20px #10d5c2;
+}
+
+.slider::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  background: white;
+  background-image: url(./images//icon-slider.svg);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.biling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.biling div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.custom-radio-btn {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 25px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  background-color: #cdd7ee;
+}
+
+.custom-radio-btn input {
+  display: none;
+}
+
+.custom-radio-btn .checkmark {
+  position: absolute;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  display: inline-block;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.custom-radio-btn input:checked + .checkmark {
+  display: inline-block;
+  background: white;
+  left: 27px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.custom-radio-btn p {
+  left: 55px;
+  position: absolute;
+  font-size: 12px;
+  color: #ff8c66;
+}
+
+.custom-radio-btn input:checked + .biling {
+  color: blue;
+}
+
+footer {
+  margin-top: 80px;
+  border-top: 1px solid #cdd7ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  margin: 40px 0 40px 40px;
+}
+
+footer div .img {
+  margin-right: 20px;
+}
+
+footer button {
+  width: 220px;
+  height: 50px;
+  margin: 40px 40px 40px 0;
+  border: none;
+  border-radius: 50px;
+  color: #cdd7ee;
+  background: #293356;
+  cursor: pointer;
+}
+
+footer button:hover {
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/*# sourceMappingURL=App.css.map */
