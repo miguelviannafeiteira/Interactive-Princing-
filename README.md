@@ -2,7 +2,7 @@
 
 <div>
   <h1>Sobre o Projeto</h1>
-  <p>Essa aplicação web serve para contratar um serviço que aumenta de acordo com o valor de pageviews, e para que essa mudança ocorrece de maneira reativa, e sem a necessidade de atualizar a página, utilizei o hook useState do React. Outro utilidade do useState foi mudar o valor caso a pessoa selecionasse pagamento por ano ou mês.   </p>
+  <p>Essa aplicação web foi criada para colocar em prática e desenvolver minhas habilidades com React, principalmente com o hook useState. Além da criação de funções para auxiliar na reatividade do site. De acordo de como a pessoa movimenta o input o valor se atualiza sem a necessidade de atualizar a página e também a valores diferentes caso a pessoa selecione o input de anuidade ou mensalidade. Para o design utilizei flex box e como pré-processador usei o SASS.</p>
 </div>  
 
 <div>
